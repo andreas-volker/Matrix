@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Matrix</title>
+</head>
+<body>
+	<div id="test"></div>
+	<script src="Matrix.min.js"></script>
+	<script>
+		(function() {
+			var test = document.getElementById('test'),
+				matrix = new Matrix('1,6,19,92');
+			matrix[0][1][2][3] = 'done';
+			test.innerHTML = matrix[0][1][2][3];
+		}());
+	</script>
+</body>
+</html>
